@@ -1,6 +1,8 @@
 const base_url = "https://api.jikan.moe/v4/anime";
 
+
 async function fetchdata() {
+
     //Will pull in the search value from the user and call it within the fetch function
     const query = document.getElementById("search_query").value;
     const response = await fetch(`${base_url}?q=${query}&sfw=true`);
@@ -87,5 +89,6 @@ async function fetchdata() {
 
     console.log("I am at the end");
 }
+
 
 btn1.addEventListener("click", fetchdata);
