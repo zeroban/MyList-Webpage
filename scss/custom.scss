@@ -7,7 +7,7 @@
 
 @import "../node_modules/bootstrap/scss/bootstrap";
 
-/* Targets the title only if it is inside an SVG that contains the Bloomerang logo */
+/* Matches if "bloomerang-gray" appears anywhere in the href */
 svg:has(use[href*="bloomerang-gray"]) title {
     display: none;
 }
